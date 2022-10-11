@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio registration</title>
+</head>
+<body>
+    
+    <center>
+        <h1>Portfolio Registration</h1>
+    <form action="{% url 'signup' %}" method="POST">
+        {% csrf_token %} 
+        <label>Title :</label>
+        <input type="text" placeholder="Enter your title" name="title" required/><br><br>
+        <label>Description :</label>
+        <input type="text" placeholder="Enter your description" name="description" required/><br><br>
+        <label>Summary :</label>
+        <input type="text" placeholder="Enter your summary" name="summary" required/><br><br>
+        <button type="submit">Register</button>
+    </form>
+</center>
+
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Summary</th>
+        <th>Action</th>
+        
+    </tr>
+    {% for selectedinfo in info %}
+    </tr>
+    <td>{{selectedinfo.title}}</td>
+    <td>{{selectedinfo.description}}</td>
+    <td>{{selectedinfo.summary}}</td>
+    <td>
+        <a href="{% url 'delete' id=selectedinfo.id %}"><button>Delete</button></a>
+            <button>Update</button>
+
+    </td>
+</tr>
+
+    {% endfor %}
+
+</table>
+</body>
+</html>

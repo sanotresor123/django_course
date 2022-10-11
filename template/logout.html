@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load static %} 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <link rel="stylesheet" href="{% static 'css/signupcss.css' %}" 
+</head>
+<body>
+    <center>
+        <h1> Account Registration</h1><br><br>
+    </center> 
+    <center>
+       
+        <form action="{% url 'save' %}" method="POST">
+            {% csrf_token %}
+        <label for="first_name"><b>First Name : </b></label>
+        <input type="text" placeholder="Enter your first name" name="first_name" required/><br><br>
+        <label for="last_name"><b>Last Name : </b></label>
+        <input type="text" placeholder="Enter your last name" name="last_name" required/><br><br>
+        <label for="sex"><b>Sex : </b></label>
+        <input type="radio" name="sex" value="male" required/>
+        <label ><b> male </b></label>
+        <input type="radio"  name="sex" value="female" required/>
+        <label ><b> female</b></label><br><br>
+        <label for="email"><b>Email : </b></label>
+        <input type="text" placeholder="Enter your email" name="email" required/><br><br>
+        <label for="password"><b>Password : </b></label>
+        <input type="password" placeholder="Enter your password" name="password" required/><br><br><br>
+        <button type="submit"><b> Save </b></button><br>
+        <a href="">Delete</a> Do you have an account? 
+        
+    </form></center>
+
+    <table>
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Sex</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Action</th>
+            
+        </tr>
+        {% for dataselected in data %}
+        <tr>
+            <td>{{ dataselected.first_name }}</td>
+            <td>{{ dataselected.last_name }}</td>
+            <td>{{ dataselected.sex }}</td>
+            <td>{{ dataselected.email }}</td>
+            <td>{{ dataselected.password }}</td>
+            <td><a href="{% url 'delete' id=dataselected.id %}"><button>Delete</button></a>
+                <a href="{% url 'update' id=dataselected.id %}"><button>Update</button></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    
+</body>
+</html>

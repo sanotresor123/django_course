@@ -1,0 +1,17 @@
+h1{
+    color: skyblue;
+
+}
+button {
+    color: black;
+    background-color: green;
+    font-size: 17px;
+    border-radius: 80px;
+    
+}
+form {
+    background-color: rgb(204, 250, 218);
+    width: 280px;
+    margin-bottom: 20px; 
+    
+}

@@ -1,0 +1,201 @@
+.newnav{
+    position: relative;
+    background-image: url('../Components/top.jpg');
+    height: 55px;
+     
+}
+.package{
+    position: relative;
+    left: 933px;
+    bottom: 110px;
+}
+.facebook{
+    position: relative;
+    left: 0px;
+}
+.twitter{
+   
+        position: relative;
+        left: 4px;
+}
+.instagram{
+    
+        position: relative;
+        left: 8px;
+}
+.linkedin{
+        position: relative;
+        left: 12px;
+    
+}
+.background{
+    position: relative;
+    bottom: 28px;
+    left: 50px;
+    
+}
+.phone{
+    position: relative;
+    left: 300px;
+    top: -14px;
+}
+.ida{
+    position: relative;
+    bottom: 70px;
+    left: 105px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.phoneid{
+    position: relative;
+    bottom: 90px;
+    left: 390px;
+    font-weight: bold;
+    font-size: 14px;
+}
+p{
+    position: relative;
+    left: 28px;
+    bottom: 15px;
+    
+}
+.image{
+    position: relative;
+    width: 125px;
+    bottom: 65px;
+    height: 1px;
+} 
+.home{
+    position: relative;
+    bottom: 30px;
+    left: 155px;
+}
+
+.services{
+    position: relative;
+    left: 500px;
+    bottom: 53px;
+}
+.programs{
+    position: relative;
+    left: 700px;
+    bottom: 77px;
+}
+.team{
+    position: relative;
+    bottom: 100px;
+    left: 699px;
+}
+.project{
+    position: relative;
+    bottom: 100px;
+    left: 500px;
+}
+button{
+    position: relative;
+    left: 1222px;
+    padding: 12px;
+    bottom: 135px;
+    
+}
+.container{
+        background-image: url('../Components/girl.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+       
+       
+       
+    }
+    .butto{
+        position: relative;
+        top: 22px;
+        left: 40px;
+    }
+    .choose{
+        position: relative;
+        bottom: 120px;
+        width: 263px;
+        left: 55px;
+        height: 380px;
+        
+    }
+    .learn{
+        position: relative;
+        left: 5px;
+        bottom: 15px;
+        
+        
+    }
+    .platform{
+        position: relative;
+        width: 300px;
+        bottom: 470px;
+        height: 350px;
+        left: 20px;
+    }
+    .plat{
+        position: relative;
+        width: 290px;
+        bottom: 820px;
+        left: 360px;
+        height: 350px;
+    }
+    .form{
+        position: relative;
+        width: 275px;
+        bottom: 1170px;
+        left: 688px;
+        height: 350px;
+    }
+     body{
+        
+        margin-left: -1px;
+        margin-right: 100px;
+    }
+    .none{
+        position: relative;
+        height: 310px;
+    }
+
+
+    .work{
+        background-image: url('../Components/Desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1000px;
+    }
+    .benefic{
+        position: relative;
+        background-image: url('../Components/top.jpg');
+        background-repeat: no-repeat;
+        
+    }
+    .ngobyi{
+        position: relative;
+        background-image: url('../../public/Images/deskeframe.jpg');
+        height: 220px;
+        
+
+    }
+    .more{
+        position: relative;
+        left: 90px;
+        bottom: 100px;
+        
+    }
+    .kigega{
+        position: relative;
+        left: 370px;
+        bottom: 320px;
+    }
+    .kajojo{
+        position: relative;
+        left: 500px;
+        bottom: 320px;
+    }
+    .findbuto{
+        position: relative;
+        left: 490px;
+        bottom: 390px;
+    }
